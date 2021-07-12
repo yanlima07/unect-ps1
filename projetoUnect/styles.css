@@ -1,0 +1,268 @@
+.header {
+  padding: 2%;
+  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.barra {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1%;
+}
+
+.barra input {
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  border: solid 3px;
+  border-radius: 20px;
+  width: 35%;
+  padding: 10px;
+  box-shadow: 5px 2.5px 2.5px grey;
+}
+
+.barra button {
+  margin: 0 0 0 10px;
+  border: 0;
+  background-color: white;
+}
+
+.meio {
+  display: flex;
+  padding-top: 2%;
+  margin: 0 10% 0 10%;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.bloquinho {
+  display: flex;
+  border: solid 3px rgb(168, 168, 168);
+  border-radius: 15px;
+  padding: 1%;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 5px 2.5px 2.5px grey;
+  margin-top: 2%;
+  min-height: 200px;
+}
+
+.bloquinho h1 {
+  margin: 0 0 2% 0;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px rgb(168, 168, 168);
+}
+
+.linha {
+  font-size: 14px;
+  display: flex;
+  margin-top: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid 1px rgb(168, 168, 168);
+}
+
+.botoes {
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.botoes img {
+  margin: 0 5px 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  display: flex;
+  padding: 2%;
+  background-color: #3e76cf;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer h1 {
+  color: white;
+  font-size: 20px;
+}
+
+.nao {
+  margin: 0 0 0 15%;
+  padding: 1%;
+  border: solid 2px;
+  color: white;
+}
+
+.sim {
+  padding: 1%;
+  border: solid 2px;
+  background-color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  display: flex;
+}
+
+.disactive {
+  display: none;
+}
+
+.modal-container {
+  display: flex;
+  background-color: white;
+  min-height: 250px;
+  min-width: 500px;
+  flex-direction: column;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 2%;
+}
+
+.dark {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topo {
+  margin: 0 0 2% 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 2px rgb(168, 168, 168);
+}
+
+.textoo {
+  padding: 2%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.modalbot {
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.limpar {
+    color: blue;
+    padding: 1%;
+    border: solid 2px;
+    border-color: blue;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.aplicar {
+  color: white;
+  padding: 1%;
+  border-radius: 15px;
+  background-color: blue;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  align-self: center;
+}
+
+@media (max-width: 400px) {
+  .bloquinho {
+    display: flex;
+    justify-content: center;
+    border: solid 3px rgb(168, 168, 168);
+    border-radius: 5px;
+    padding: 1%;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 5px 2.5px 2.5px grey;
+    margin-top: 2%;
+  }
+}
